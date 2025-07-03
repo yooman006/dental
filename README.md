@@ -25,32 +25,39 @@
 
 ## Architecture Overview
 
-dental-dashboard/
-|-- node_modules/ # Project dependencies
-|-- public/ # Static assets
-|-- src/
-│ |-- assets/ # Images etc.
-│ |-- components/ # Reusable UI components
-│ │ |-- admin/ # Admin-specific components
-│ │ │ |-- AppointmentForm.jsx
-│ │ │ |-- Appointments.jsx
-│ │ │ |-- CalendarView.jsx
-│ │ │ |-- PatientForm.jsx|
-│ │ │ |-- Patients.jsx
-│ │ |-- auth/ # Authentication components
-│ │ │ |-- LoginForm.jsx
-│ │ │ |-- Dashboard.jsx
-│ │ |-- LoadingSpinner.jsx 
-│ |-- contexts/ # React contexts
-│ │ |-- AuthContext.jsx
-│ |-- pages/ # Page-level components
-│ │ |-- LoginPage.jsx
-│ |-- routes/ # Routing configuration
-│ │ |-- index.jsx
-│ |-- utils/ 
-│ │ |-- mockData.js
-│ |-- App.jsx # Root component
-│ |-- main.jsx # Application entry point
+dental-dashboard 
+  → node_modules ............. Project dependencies
+  → public ................... Static assets
+
+  → src
+    → assets ..................... Images, icons, etc.
+    → components
+      → admin
+        → AppointmentForm.jsx
+        → Appointments.jsx
+        → CalendarView.jsx
+        → PatientForm.jsx
+        → Patients.jsx
+      → auth
+        → LoginForm.jsx
+        → Dashboard.jsx
+      → LoadingSpinner.jsx
+
+    → contexts
+      → AuthContext.jsx
+
+    → pages
+      → LoginPage.jsx
+
+    → routes
+      → index.jsx
+
+    → utils
+      → mockData.js
+
+    → App.jsx .................... Root component
+    → main.jsx ................... Entry point
+
 
 
 ### Technical Decisions
